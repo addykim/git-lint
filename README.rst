@@ -118,7 +118,7 @@ Below is the simplest call, for a detailed list, see the help::
   api.py:6: [C0103(invalid-name), callMethod] Invalid function name "callMethod"
 
 
-By default git lint only reports problems with the modified lines
+By default, git lint only reports problems with the modified lines
 (with the exception of some linters that check that the whole file is sound).
 To force displaying all the output from the linters use the -f option.
 
@@ -194,7 +194,7 @@ Limitations
 -----------
 
 In some cases a change will trigger a warning in another line. Those cases are
-unfortunately not handled by git-lint, as it only reports those lines taht were
+unfortunately not handled by git-lint, as it only reports those lines that were
 modified. Fully supporting this use case would require to run the linters twice
 and report only the new lines. The most common case in which this occurs is with
 unused imports or variables. Let's say we have the following piece of code::
